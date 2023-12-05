@@ -11,6 +11,8 @@ namespace cupom_mania.Entity
         [Required(ErrorMessage = "Price not null")]
         public double Price { get; set; }
         public int Stock { get; set; }
+        public int IdCategory { get; set; }
+        public virtual Category Category { get; set; }
 
     }
 }
